@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>Add Subscriber</h1>
+<div mat-dialog-content>
+  <form [formGroup]="form">
+    <mat-form-field class="width-100">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="width-100">
+      <mat-label>First name</mat-label>
+      <input matInput formControlName="firstName">
+    </mat-form-field>
+    <mat-form-field class="width-100">
+      <mat-label>Last name</mat-label>
+      <input matInput formControlName="lastName">
+    </mat-form-field>
+    <mat-form-field class="width-100">
+      <mat-label>Nickname</mat-label>
+      <input matInput formControlName="nickname">
+    </mat-form-field>
+  </form>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="close()">Cancel</button>
+  <button mat-button [disabled]="!form.valid" (click)="save()">Add</button>
+</div>

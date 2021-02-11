@@ -1,0 +1,5 @@
+{
+    "tableName": "contacttable",
+    "partitionKeyName": "id",
+    "partitionKeyType": "S"
+}
